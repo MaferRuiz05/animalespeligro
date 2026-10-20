@@ -1,0 +1,178 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b1f3d;
+    background-image: url('../imagenes/maya.jpg'); 
+    background-repeat: repeat;
+}
+
+
+.page-wrapper {
+    min-height: 100vh;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.site-container {
+    width: 100%;
+    max-width: 1024px; 
+    background-color: #1a1228;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+
+.header-section {
+    background-color: #0b0712;
+}
+
+.header-logo {
+    max-height: 55px;
+    object-fit: contain;
+}
+
+.header-slogan {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+
+.custom-navbar {
+    background-color: #050308 !important;
+    border-top: 1px solid #333;
+    border-bottom: 2px solid #000;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #79aee2 !important;
+}
+
+
+.banner-section {
+    background: linear-gradient(to bottom, #1a1228, #110b1a);
+    padding: 15px 0;
+}
+
+.banner-img {
+    max-width: 850px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+
+.content-white-section {
+    background-color: #ffffff;
+    background-image: url('../imagenes/fondo.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 120px;
+    color: #333333;
+}
+
+.section-title {
+    color: #287399;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.grid-img {
+    width: 100%;
+    height: 95px;
+    object-fit: cover;
+    border: 1px solid #dcdcdc;
+}
+
+.description-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.opinion-img {
+    max-width: 220px;
+    transition: transform 0.2s;
+}
+
+.opinion-img:hover {
+    transform: scale(1.02);
+}
+
+
+.footer-section {
+    background-color: #050308;
+    line-height: 0;
+}
+
+.footer-bar {
+    width: 100%;
+    display: block;
+    max-height: 60px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .page-wrapper {
+        padding: 0;
+    }
+    .site-container {
+        max-width: 100%;
+        box-shadow: none;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .section-title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .grid-img {
+        height: 110px; 
+    }
+    .description-text {
+        font-size: 0.85rem;
+        text-align: justify;
+    }
+    .opinion-img {
+        max-width: 180px;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .site-container {
+        max-width: 720px;
+    }
+    .grid-img {
+        height: 120px;
+    }
+    .description-text {
+        font-size: 0.88rem;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .site-container {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .grid-img {
+        height: 130px;
+    }
+}
